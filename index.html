@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Proposta Comercial — MLX Mind × Ruah Imobiliária</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500&family=Orbitron:wght@600;700;800;900&display=swap" rel="stylesheet">
 <style>
   :root {
     --purple-deep: #1a0a2e;
@@ -96,6 +96,26 @@
     display: flex;
     align-items: center;
     gap: 10px;
+  }
+
+
+  .mlx-bars-logo {
+    width: 52px;
+    height: 42px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: skewX(-18deg);
+    filter: drop-shadow(0 0 14px rgba(155,77,255,0.45));
+  }
+
+  .mlx-bars-logo span {
+    display: block;
+    height: 10px;
+    border-radius: 2px;
+    background: linear-gradient(135deg, #c026ff 0%, #7b2ff7 55%, #9b4dff 100%);
+    box-shadow: inset 0 0 1px rgba(255,255,255,0.4), 0 0 16px rgba(155,77,255,0.35);
   }
 
   .logo-icon {
@@ -588,17 +608,20 @@
   }
 
   .plan-price-label {
-    font-size: 10px;
-    color: var(--text-muted);
-    letter-spacing: 0.5px;
-    margin-bottom: 4px;
+    font-family: 'Syne', sans-serif;
+    font-size: 11px;
+    color: rgba(255,255,255,.65);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
   }
 
   .plan-price-value {
-    font-family: 'Syne', sans-serif;
-    font-size: 36px;
-    font-weight: 800;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
     line-height: 1;
+    letter-spacing: -3px;
   }
 
   .plan-card.base .plan-price-value { color: white; }
@@ -612,10 +635,10 @@
 
   .plan-price-period {
     font-family: 'Inter', sans-serif;
-    font-size: 12px;
-    font-weight: 300;
-    color: var(--text-muted);
-    margin-left: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(255,255,255,.7);
+    margin-left: 6px;
   }
 
   .plan-items {
@@ -731,6 +754,13 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+  }
+
+  .conditions-table td.plan-a,
+  .conditions-table td.plan-b .gold-val {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.4px;
   }
 
   .discount-pill {
@@ -1079,9 +1109,12 @@
   </div>
 
   <div class="capa-header">
-    <div class="logo-badge">
-      <div class="logo-icon">MLX</div>
-      <div class="logo-name">MLX <span style="color:var(--purple-glow)">Mind</span></div>
+    <div class="logo-badge" aria-label="MLX Mind">
+      <div class="mlx-bars-logo" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
     <div class="capa-badge">Proposta Comercial · 2025</div>
   </div>
@@ -1480,9 +1513,12 @@
   <div class="geo-corner corner-br"></div>
 
   <div class="page-header-bar" style="padding:28px 44px 20px; border-bottom: 1px solid rgba(123,47,247,0.2); position:relative; z-index:2;">
-    <div class="logo-badge">
-      <div class="logo-icon">MLX</div>
-      <div class="logo-name">MLX <span style="color:var(--purple-glow)">Mind</span></div>
+    <div class="logo-badge" aria-label="MLX Mind">
+      <div class="mlx-bars-logo" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
     <span class="page-num">06 / 06</span>
   </div>
